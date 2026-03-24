@@ -211,12 +211,6 @@ main(int argc, char* argv[])
         address.Assign(lan2HostDevices);
 
     /*
-     * Build a routing database and initialize the routing tables of the nodes
-     * in the simulation.
-     */
-    Ipv4GlobalRoutingHelper::PopulateRoutingTables();
-
-    /*
      * Ping from node with index senderNodeIndex to node with index receiverNodeIndex
      * Get the first Address of the first Interface (not including loopback) of both the nodes
      * GetAddress takes in the index of the interface and index of ip address as argument
