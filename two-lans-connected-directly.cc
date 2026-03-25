@@ -131,10 +131,10 @@ main(int argc, char* argv[])
     NetDeviceContainer lan1SwitchPorts;
     NetDeviceContainer lan2SwitchPorts;
 
- /*
-  * Iterate through all nodes in LAN-1 and create a dedicated
-  * CSMA link between each node and Switch 1.
-  */
+    /*
+     * Iterate through all nodes in LAN-1 and create a dedicated
+     * CSMA link between each node and Switch 1.
+     */
     for (uint32_t i = 0; i < lan1.GetN(); i++)
     {
         
@@ -147,10 +147,10 @@ main(int argc, char* argv[])
         lan1HostDevices.Add(link.Get(0));
         lan1SwitchPorts.Add(link.Get(1));
     }
- /*
-  * Iterate through all nodes in LAN-2 and create a dedicated
-  * CSMA link between each node and Switch 2.
-  */
+    /*
+     * Iterate through all nodes in LAN-2 and create a dedicated
+     * CSMA link between each node and Switch 2.
+     */
     for (uint32_t i = 0; i < lan2.GetN(); i++)
     {
         NodeContainer pair;
